@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamilton chez Ferrari ! </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-hamilton">
+  <header>
+    <nav>
+        <a href="index.html">
+            <img src="images/Fblog..png" alt="logo blog" class="logo">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href=index.html>Accueil</a></li>
+                <li class="has-sous-nav">
+                    <a href=blog.html>Blog</a>
+                    <ul class="sous-nav">
+                        <li><a href="blog.html">Actualités</a></li>
+                        <li><a href="blog.html#article-lien">Créer son article</a></li>
+                    </ul>
+                </li>
+                <li class="has-sous-nav">
+                    <a href=classement.html>Classement F1</a>
+                    <ul class="sous-nav">
+                        <li><a href="classement.html">Classement pilotes</a></li>
+                        <li><a href="classement.html#classement-link">Classement écuries</a></li>
+                    </ul>
+                </li>
+                <li><a href=contact.html>Contact</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="login.html" class="bouton-login">S'inscrire</a>
+        </div>
+        <img src="images/avatar-anonyme.png" alt="photo de profil" class="user-pic" onclick="toggleMenu()">
+        
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/avatar-anonyme.png" alt="avatar">
+              <h2>Hugo</h2>
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+              <img src="images/utilisateur.png" alt="utilisateur">
+              <p>Modifier le profil</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/parametres-cog.png" alt="parametres">
+              <p>Paramètres</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/question.png" alt="question">
+              <p>Aide</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/se-deconnecter.png" alt="se deconnecter">
+              <p>Se déconnecter</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+    </nav>
+</header>
+    <main>
+        <div class="blog-hamilton-container">
+            <h1>Lewis Hamilton officiellement chez Ferrari</h1>
+            <div class="article-image">
+                <img src="images/1200x675_cmsv2_40ab9b43-4fee-5855-9689-db9751616a6d-8211928.webp" alt="Lewis Hamilton chez Ferrari">
+            </div>
+            <p>Après de nombreuses spéculations et rumeurs, l'annonce tant attendue est enfin tombée : Lewis Hamilton rejoint Ferrari pour la prochaine saison de Formule 1. Cette nouvelle secoue le monde du sport automobile et marque le début d'un nouveau chapitre dans la carrière du champion britannique.</p>
+            
+            <p>Hamilton, sept fois champion du monde, a déclaré lors de la conférence de presse : "Je suis extrêmement enthousiaste à l'idée de rejoindre l'équipe emblématique de Ferrari. C'est un rêve devenu réalité pour moi et je suis impatient de relever ce nouveau défi avec eux."</p>
+            
+            <p>Les détails du contrat n'ont pas été divulgués, mais il est largement présumé que Hamilton a signé un accord lucratif avec l'écurie italienne, ce qui lui assure une position de premier plan dans l'équipe.</p>
+            
+            <p>Cette décision marque la fin de l'ère Hamilton chez Mercedes, où il a passé une décennie couronnée de succès. Son transfert chez Ferrari promet d'apporter de l'excitation et du suspense à la prochaine saison de F1.</p>
+            
+            <p>Les fans du pilote britannique attendent avec impatience de le voir rouler dans la légendaire livrée rouge de Ferrari et d'assister à de nouveaux duels épiques sur les circuits du monde entier.</p>
+        </div>
+    </main>
+    <footer>
+      <div class="footer-container">
+          <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="classement.html">Classement F1</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="social-icons">
+              <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+          </div>
+          <div class="copyright">
+              <p>&copy; 2024 FBlog. Tous droits réservés.</p>
+              <p><a href="#">Conditions générales d'utilisation</a></p>
+          </div>
+      </div>
+    </footer>
+    
+    
+      
+  <script>
+    let subMenu = document.getElementById("subMenu");
+  
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");
+    }
+  
+  </script>
+</body>
+</html>

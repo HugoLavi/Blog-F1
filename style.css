@@ -1,0 +1,934 @@
+@font-face {
+    font-family: "font-f1";
+    src: url(font/Formula1-Regular-1.ttf);
+}
+
+*{
+    font-family: "font-f1";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 200%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: #12161B;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    left: 0;
+    flex: 1;
+}
+
+.menu > ul {
+    list-style-type: none;
+    font-size: 120%;
+    display: flex;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 20px;
+}
+
+.menu ul li a:hover {
+    color: #FF3131;
+    transition: ease-in 0.3s;
+}
+
+.has-sous-nav{
+    position: relative;
+}
+
+.sous-nav:hover{
+    transition: ease-in 10s;
+}
+
+.sous-nav{
+    list-style: none;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width:max-content;
+    background-color: #12161B;
+}
+
+
+.has-sous-nav:hover .sous-nav{
+    display: block;
+}
+
+.bouton-login {
+    background-color: #FF3131;
+    color: #ffffff;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 135%;
+    text-decoration: none;
+}
+
+.bouton-login:hover {
+    background-color: #b95050;
+}
+
+.logo{
+    width: 75%;
+    margin-left: 10%;
+}
+
+.login{
+    margin-right: 2%;
+}
+
+.user-pic{
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info h3{
+    font-weight: 500;
+}
+
+.user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin: 12px 0;
+}
+
+.sub-menu-link p{
+    width: 100%;
+}
+
+.sub-menu-link img{
+    width: 20px;
+    background: #e5e5e5;
+    border-radius: 20%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+}
+
+.bg-image{
+    width: 100%;
+    height: 90vh;
+    background-image: url("images/YWpAKcfB.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+.bg-image-content{
+    padding: 490px 0;
+    text-align: center;
+}
+
+.bg-image-content h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.bg-image-content h1 span{
+    color: #ec3333;
+}
+
+.bg-image-content p{
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+}
+
+
+.bouton-bgimage{
+    padding: 12px 22px;
+    margin-top: 30px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #ec3333;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+    text-decoration: none;
+}
+
+.bouton-bgimage:hover{
+    opacity: 1;
+}
+
+.article-homepage{
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 3%;
+}
+
+.article-homepage img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.verstappen,
+.vettel,
+.russell,
+.leclerc,
+.alonso,
+.hamilton{
+    border: 1px solid black;
+    border-radius: 50px;
+    margin: 1%;
+}
+
+article{
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.article-h{
+    margin: 1%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.verstappen h1,
+.vettel h1,
+.russell h1
+.leclerc h1,
+.alonso h1,
+.hamilton h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+  
+.date{
+    font-style: italic;
+    font-size: 14px;
+  }
+  
+figure{
+    margin-bottom: 20px;
+}
+
+.verstappen img,
+.vettel img,
+.russell img,
+.leclerc img,
+.alonso img,
+.hamilton img{
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: solid 3px black;
+}
+  
+figcaption{
+    font-style: italic;
+    font-size: 14px;
+    text-align: center;
+}
+
+.actu{
+    text-align: center;
+    font-size: 200%;
+    margin-top: 8%;
+}
+
+.crash-russell{
+    margin-left: 23%;
+    width: 1000px;
+    height: 500px;
+}
+
+.description-crash{
+    text-align: center;
+}
+
+.verstappen p,
+.vettel p,
+.russell p,
+.leclerc p,
+.alonso p,
+.hamilton p{
+    line-height: 1.6;
+    margin: 0 3% 3%;
+}
+  
+.author {
+    font-style: italic;
+    font-size: 14px;
+    text-align: right;
+}
+
+.actu-button{
+    padding: 12px 22px;
+    margin-top: 30px;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #ec3333;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+    margin-left: 41%;
+    text-decoration: none;
+}
+
+.actu-button:hover{
+    opacity: 1;
+}
+
+.body-login{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "font-f1";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images/466953.jpg) no-repeat;
+}
+
+.wrapper{
+    width: 420px;
+    background: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.wrapper h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 83%;
+    height: 18%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: white;
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.wrapper .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input{
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+}
+
+.wrapper .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back-home:hover,
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.back-home{
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    top: 40px;
+    left: 40px;
+    font-size: 120%;
+}
+
+.creation-article h2{
+    margin-top: 5%;
+}
+
+.creation-article p{
+    text-align: center;
+}
+
+.creation-article h3,
+.form-article{
+    text-align: center;
+}
+
+.form-article form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.form-article label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+.form-article input[type="text"],
+.form-article textarea {
+    width: 35%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+.form-article input[type="file"] {
+    margin-bottom: 20px;
+}
+.form-article input[type="submit"] {
+    background-color: #FF3131;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.form-article input[type="submit"]:hover {
+    background-color: #b95050;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #555;
+    font-size: 30px;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+table img {
+    width: 40px;
+    height: 25px;
+}
+
+.body-classement{
+    background-color: RGB(18, 22, 27);
+}
+
+.h2-classement{
+    margin-top: 6%;
+    color: white;
+}
+
+.bg-image-classement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;   
+    background-size: 100%;
+    background-image: url(images/lewis-hamilton-a-demontre-qu-il-restait-le-grandissime-favori-de-la-formule-1-malgre-des-records-a-la-pelle-photo-lars-baron-afp-1616959046.jpg);
+}
+
+.bg-image-classement1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-repeat: no-repeat;   
+    background-size: 100%;
+    background-image: url(images/504_sport_Media365-Sport-News_73f_e95_7af1cfe2d4b9dc970159895978_f1-gp-d-arabie-saoudite-victoire-de-verstappen-double-de-red-bull_maw_verstappen-09-03-2024-1024x538.jpg);
+}
+
+.h2-ecurie{
+    color: white;
+}
+
+.main-classement{
+    background-color: RGB(2, 2, 2);
+}
+.container {
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container label {
+    font-weight: bold;
+    color: white;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: black;
+}
+
+.container textarea {
+    resize: none;
+    height: 120px;
+}
+
+.container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #ec3333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #FF3131;
+}
+
+.main-contact{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(images/eaa698b63df39e7c9cad20ba9b35d0c8.jpg);
+}
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: RGB(18, 22, 27);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    z-index: 1000;
+}
+
+.cookie-checkbox:checked ~ .cookie-banner {
+    display: none;
+}
+
+.cookie-checkbox:not(:checked) ~ .cookie-banner {
+    display: block;
+}
+
+.accept-label {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: RGB(18, 22, 27);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.copyright p {
+    margin: 0;
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+}
+
+.body-hamilton {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.blog-hamilton-container {
+    max-width: 800px;
+    margin: 130px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.body-hamilton h1{
+    text-align: center;
+}
+.article-image {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.article-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.body-hamilton p{
+    line-height: 1.6;
+}
+
+
+@media (max-width: 400px){
+    nav a{
+        font-size: 40%;
+    }
+
+    ul{
+        padding: 5%;
+    }
+
+    .menu{
+        flex: 0;
+    }
+
+    .menu li a{
+        padding: 5px;
+    }
+
+    .logo{
+        width: 68px;
+    }
+
+    .bouton-login{
+        font-size: 70%;
+        padding: 8px 13px;
+        margin-left: 13%;
+    }
+
+    .user-pic{
+        width: 30px;
+        height: 30px;
+        margin-left: 1%;
+    }
+
+    .bg-image{
+        height: 57vh;
+        background-size: 200%;
+    }
+
+    .bg-image-content{
+        padding: 230px 0;
+    }
+
+    .bg-image-content h1{
+        font-size: 20px;
+    }
+
+    .bg-image-content p{
+        font-size: 7px;
+    }
+
+    .bouton-bgimage{
+        padding: 2px 11px;
+        font-size: 12px;
+    }
+
+    h2{
+        font-size: 110%;
+    }
+
+    .article-homepage{
+        flex-direction: column;
+    }
+
+    .actu-button{
+        font-size: 12px;
+        margin-left: 28%;
+    }
+
+    .actu{
+        font-size: 130%;
+        margin-top: 28%;
+    }
+
+    .crash-russell{
+        margin-left: 13%;
+        width: 280px;
+        height: 320px;
+    }
+
+    .h2-classement{
+        margin-top: 25%;
+        margin-left: 17%;
+    }
+
+    .bg-image-classement{
+        align-items: flex-start;
+    }
+
+    th{
+        font-size: 11px;
+    }
+
+    td{
+        font-size: 8px;
+    }
+
+    table img{
+        width: 25px;
+        height: 15px;
+    }
+
+    table{
+        margin-left: 5%;
+    }
+
+    #classement-link{
+        margin-right: 5%;
+    }
+
+    .container input[type="text"],
+    .container input[type="email"],
+    .container textarea{
+        font-size: 8px;
+        padding: 7px;
+    }
+
+    .container{
+        gap: 10px;
+        margin-bottom: 17%;
+    }
+
+    .wrapper h1{
+        font-size: 29px;   
+    }
+
+    .form-login{
+        margin-left: 13%;
+    }
+}
+
+.levitate{
+    animation: levitate 2s infinite alternate ease-in-out;
+}
+
+@keyframes levitate  {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+}

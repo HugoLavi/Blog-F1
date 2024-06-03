@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body-classement">
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/Fblog..png" alt="logo blog" class="logo">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li><a href=index.html>Accueil</a></li>
+                    <li class="has-sous-nav">
+                        <a href=blog.html>Blog</a>
+                        <ul class="sous-nav">
+                            <li><a href="blog.html">Actualités</a></li>
+                            <li><a href="blog.html#article-lien">Créer son article</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sous-nav">
+                        <a href=classement.html>Classement F1</a>
+                        <ul class="sous-nav">
+                            <li><a href="classement.html">Classement pilotes</a></li>
+                            <li><a href="classement.html#classement-link">Classement écuries</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=contact.html>Contact</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="login.html" class="bouton-login">S'inscrire</a>
+            </div>
+            <img src="images/avatar-anonyme.png" alt="photo de profil" class="user-pic" onclick="toggleMenu()">
+            
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="images/avatar-anonyme.png" alt="avatar">
+                  <h2>Hugo</h2>
+                </div>
+                <hr>
+
+                <a href="#" class="sub-menu-link">
+                  <img src="images/utilisateur.png" alt="utilisateur">
+                  <p>Modifier le profil</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/parametres-cog.png" alt="parametres">
+                  <p>Paramètres</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/question.png" alt="question">
+                  <p>Aide</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/se-deconnecter.png" alt="se deconnecter">
+                  <p>Se déconnecter</p>
+                  <span>></span>
+                </a>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-classement">
+        <div class="bg-image-classement">
+            <h2 class="h2-classement">Classement pilotes 2024</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Pilote</th>
+                        <th>Nationalité</th>
+                        <th>Écurie</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>M. Verstappen</td>
+                        <td><img src="images/flags/Flag_of_the_Netherlands.svg.png"></td>
+                        <td>Red Bull</td>
+                        <td>51</td>
+                    </tr>
+                    <tr>
+                        <td>C. Leclerc</td>
+                        <td><img src="images/flags/Flag_of_Monaco.svg.png"></td>
+                        <td>Ferrari</td>
+                        <td>47</td>
+                    </tr>
+                    <tr>
+                        <td>S. Perez</td>
+                        <td><img src="images/flags/Flag_of_Mexico.svg.png"></td>
+                        <td>Red Bull</td>
+                        <td>46</td>
+                    </tr>
+                    <tr>
+                        <td>C. Sainz Jr.</td>
+                        <td><img src="images/flags/Flag_of_Spain.svg.png"></td>
+                        <td>Ferrari</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>O. Piastri</td>
+                        <td><img src="images/flags/Flag_of_Australia_(converted).svg.png"></td>
+                        <td>McLaren</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>L. Norris</td>
+                        <td><img src="images/flags/Flag_of_the_United_Kingdom_(3-5).svg.png"></td>
+                        <td>McLaren</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>G. Russell</td>
+                        <td><img src="images/flags/Flag_of_the_United_Kingdom_(3-5).svg.png"></td>
+                        <td>Mercedes</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>F. Alonso</td>
+                        <td><img src="images/flags/Flag_of_Spain.svg.png"></td>
+                        <td>Aston Martin</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>L. Stroll</td>
+                        <td><img src="images/flags/Flag_of_Canada_(Pantone).svg.png"></td>
+                        <td>Aston Martin</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td>L. Hamilton</td>
+                        <td><img src="images/flags/Flag_of_the_United_Kingdom_(3-5).svg.png"></td>
+                        <td>Mercedes</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Y. Tsunoda</td>
+                        <td><img src="images/flags/Flag_of_Japan.svg.png"></td>
+                        <td>Racing Bulls</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>N. Hulkenberg</td>
+                        <td><img src="images/flags/Flag_of_Germany.svg.png"></td>
+                        <td>Haas</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>K. Magnussen</td>
+                        <td><img src="images/flags/Flag_of_Denmark.svg.png"></td>
+                        <td>Haas</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>A. Albon</td>
+                        <td><img src="images/flags/Flag_of_Thailand.svg.png"></td>
+                        <td>Williams</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>G. Zhou</td>
+                        <td><img src="images/flags/Flag_of_the_People's_Republic_of_China.svg"></td>
+                        <td>Sauber</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>D. Ricciardo</td>
+                        <td><img src="images/flags/Flag_of_Australia_(converted).svg.png"></td>
+                        <td>Racing Bulls</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>E. Ocon</td>
+                        <td><img src="images/flags/Flag_of_France_(1794–1815,_1830–1974).svg"></td>
+                        <td>Alpine</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>P. Gasly</td>
+                        <td><img src="images/flags/Flag_of_France_(1794–1815,_1830–1974).svg"></td>
+                        <td>Alpine</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>V. Bottas</td>
+                        <td><img src="images/flags/Flag_of_Finland.svg"></td>
+                        <td>Sauber</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>L. Sargeant</td>
+                        <td><img src="images/flags/Flag_of_the_United_States_(Pantone).svg"></td>
+                        <td>Williams</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="bg-image-classement1">
+            <h2 class="h2-ecurie">Classement écuries 2024</h2>
+            <table id="classement-link">
+                <thead>
+                    <tr>
+                        <th>Écurie</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Red bull</td>
+                        <td>97</td>
+                    </tr>
+                    <tr>
+                        <td>Ferrari</td>
+                        <td>93</td>
+                    </tr>
+                    <tr>
+                        <td>McLaren</td>
+                        <td>55</td>
+                    </tr>
+                    <tr>
+                        <td>Mercedes</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td>Aston Martin</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Racing Bulls</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Haas</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Alpine</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Sauber</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Williams</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="classement.html">Classement F1</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 FBlog. Tous droits réservés.</p>
+                <p><a href="#">Conditions générales d'utilisation</a></p>
+            </div>
+        </div>
+      </footer>
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+      
+    function toggleMenu(){
+      subMenu.classList.toggle("open-menu");
+    }
+      
+</script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="images/Fblog..png" alt="logo blog" class="logo">
+            </a>
+            <div class="menu">
+                <ul>
+                    <li><a href=index.html>Accueil</a></li>
+                    <li class="has-sous-nav">
+                        <a href=blog.html>Blog</a>
+                        <ul class="sous-nav">
+                            <li><a href="blog.html">Actualités</a></li>
+                            <li><a href="blog.html#article-lien">Créer son article</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-sous-nav">
+                        <a href=classement.html>Classement F1</a>
+                        <ul class="sous-nav">
+                            <li><a href="classement.html">Classement pilotes</a></li>
+                            <li><a href="classement.html#classement-link">Classement écuries</a></li>
+                        </ul>
+                    </li>
+                    <li><a href=contact.html>Contact</a></li>
+                </ul>
+            </div>
+            <div class="login">
+                <a href="login.html" class="bouton-login">S'inscrire</a>
+            </div>
+            <img src="images/avatar-anonyme.png" alt="photo de profil" class="user-pic" onclick="toggleMenu()">
+            
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <img src="images/avatar-anonyme.png" alt="avatar">
+                  <h2>Hugo</h2>
+                </div>
+                <hr>
+
+                <a href="#" class="sub-menu-link">
+                  <img src="images/utilisateur.png" alt="utilisateur">
+                  <p>Modifier le profil</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/parametres-cog.png" alt="parametres">
+                  <p>Paramètres</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/question.png" alt="question">
+                  <p>Aide</p>
+                  <span>></span>
+                </a>
+                <a href="#" class="sub-menu-link">
+                  <img src="images/se-deconnecter.png" alt="se deconnecter">
+                  <p>Se déconnecter</p>
+                  <span>></span>
+                </a>
+              </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <input type="checkbox" id="acceptCheckbox" class="cookie-checkbox">
+        <div id="cookieBanner" class="cookie-banner">
+          <label for="acceptCheckbox" class="accept-label">Accepter</label>
+          <p>Ce site utilise des cookies pour améliorer votre expérience. En continuant à naviguer sur ce site, vous acceptez l'utilisation de cookies.</p>
+        </div>
+        <section>
+            <div class="bg-image">
+                <div class="bg-image-content">
+                    <h1>Bienvenue sur un <span>blog</span> de Formule 1</h1>
+                    <p>Découvrez toutes les dernières actualités de la Formule 1 sur notre blog dédié ! Suivez les courses, les pilotes et les rebondissements en un clin d'œil. Ne manquez rien de l'action sur et hors de la piste. Rejoignez-nous dès maintenant pour une plongée passionnante dans l'univers de la F1 !</p>
+                    <a href="blog.html" class="bouton-bgimage">Voir le blog</a>   
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2 class="levitate">Découvrez les actualités !</h2>
+            <div class="article-homepage">
+                <div class="hamilton">
+                    <article>
+                        <div class="article-h">
+                          <h3>Hamilton chez Ferrari !</h3>
+                          <p class="date">Publié le 20 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <a href="hamilton.html">
+                            <img src="images/1200x675_cmsv2_40ab9b43-4fee-5855-9689-db9751616a6d-8211928.webp" alt="Hamilton">
+                          </a>
+                          <figcaption>Lewis Hamilton</figcaption>
+                        </figure>
+                    
+                        <p>Le transfert officiel de Lewis Hamilton chez Ferrari vient d'être annoncé, marquant ainsi un tournant majeur dans l'histoire de la Formule 1. Ce mouvement, très attendu, place l'un des pilotes les plus titrés de l'histoire de la F1 au sein de l'équipe emblématique italienne. Ce partenariat promet de redéfinir les standards de la compétition et d'ouvrir un nouveau chapitre excitant dans le sport automobile.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+                <div class="alonso">
+                    <article>
+                        <div class="article-h">
+                          <h3>Alonso veut rejoindre Red Bull Racing en 2025 et déclenche des rumeurs.</h3>
+                          <p class="date">Publié le 24 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <img src="images/Fernando-Alonso-1-1-scaled.webp" alt="Alonso">
+                          <figcaption>Fernando Alonso</figcaption>
+                        </figure>
+                    
+                        <p>Les derniers bruits de paddock laissent entendre que Fernando Alonso aspire à rejoindre Red Bull. Son envie de s'aligner avec l'équipe autrichienne ajoute une dose d'excitation à la saison à venir de Formule 1.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+                <div class="leclerc">
+                    <article>
+                        <div class="article-h">
+                          <h3>Leclerc impressionné par le rythme de Ferrari : "Un signe très encourageant"</h3>
+                          <p class="date">Publié le 26 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <img src="images/f1-charles-leclerc-ferrari-f1austria-f1spa-f1hungaroring-f1france-f1barcelona-f1italy-f1imola-f1silverstone-f1zandvoort.webp" alt="Leclerc">
+                          <figcaption>Charles Leclerc</figcaption>
+                        </figure>
+                    
+                        <p>Charles Leclerc est plus confiant que jamais alors qu'il s'apprête à entamer une nouvelle saison avec Ferrari. Encouragé par le rythme prometteur affiché par l'équipe lors des essais hivernaux, le jeune prodige monégasque se prépare à relever les défis qui l'attendent sur la piste. Avec une détermination renouvelée, Leclerc est prêt à repousser les limites et à défendre les couleurs de la Scuderia avec fougue et passion.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+            </div>
+            <a href="blog.html" class="actu-button">Voir plus d'actualités</a> 
+        </section>
+    
+    </main>
+    <footer>
+      <div class="footer-container">
+          <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="classement.html">Classement F1</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="social-icons">
+              <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+          </div>
+          <div class="copyright">
+              <p>&copy; 2024 FBlog. Tous droits réservés.</p>
+              <p><a href="#">Conditions générales d'utilisation</a></p>
+          </div>
+      </div>
+    </footer>
+  
+  
+    
+<script>
+  let subMenu = document.getElementById("subMenu");
+
+  function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+  }
+
+</script>
+
+</body>
+</html>

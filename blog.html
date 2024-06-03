@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+        <a href="index.html">
+            <img src="images/Fblog..png" alt="logo blog" class="logo">
+        </a>
+        <div class="menu">
+            <ul>
+                <li><a href=index.html>Accueil</a></li>
+                <li class="has-sous-nav">
+                    <a href=blog.html>Blog</a>
+                    <ul class="sous-nav">
+                        <li><a href="blog.html">Actualités</a></li>
+                        <li><a href="blog.html#article-lien">Créer son article</a></li>
+                    </ul>
+                </li>
+                <li class="has-sous-nav">
+                    <a href=classement.html>Classement F1</a>
+                    <ul class="sous-nav">
+                        <li><a href="classement.html">Classement pilotes</a></li>
+                        <li><a href="classement.html#classement-link">Classement écuries</a></li>
+                    </ul>
+                </li>
+                <li><a href=contact.html>Contact</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="login.html" class="bouton-login">S'inscrire</a>
+        </div>
+        <img src="images/avatar-anonyme.png" alt="photo de profil" class="user-pic" onclick="toggleMenu()">
+        
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/avatar-anonyme.png" alt="avatar">
+              <h2>Hugo</h2>
+            </div>
+            <hr>
+
+            <a href="#" class="sub-menu-link">
+              <img src="images/utilisateur.png" alt="utilisateur">
+              <p>Modifier le profil</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/parametres-cog.png" alt="parametres">
+              <p>Paramètres</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/question.png" alt="question">
+              <p>Aide</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/se-deconnecter.png" alt="se deconnecter">
+              <p>Se déconnecter</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+    </nav>
+</header>
+
+    <main>
+        <section>
+            <h2 class="actu">Découvrez les actualités !</h2>
+            <div class="article-homepage">
+                <div class="hamilton">
+                    <article>
+                        <div class="article-h">
+                          <h3>Hamilton chez Ferrari !</h3>
+                          <p class="date">Publié le 20 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <a href="hamilton.html">
+                            <img src="images/1200x675_cmsv2_40ab9b43-4fee-5855-9689-db9751616a6d-8211928.webp" alt="Hamilton">
+                          </a>
+                          <figcaption>Lewis Hamilton</figcaption>
+                        </figure>
+                    
+                        <p>Le transfert officiel de Lewis Hamilton chez Ferrari vient d'être annoncé, marquant ainsi un tournant majeur dans l'histoire de la Formule 1. Ce mouvement, très attendu, place l'un des pilotes les plus titrés de l'histoire de la F1 au sein de l'équipe emblématique italienne. Ce partenariat promet de redéfinir les standards de la compétition et d'ouvrir un nouveau chapitre excitant dans le sport automobile.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+                <div class="alonso">
+                    <article>
+                        <div class="article-h">
+                          <h3>Alonso veut rejoindre Red Bull Racing en 2025 et déclenche des rumeurs.</h3>
+                          <p class="date">Publié le 24 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <img src="images/Fernando-Alonso-1-1-scaled.webp" alt="Alonso">
+                          <figcaption>Fernando Alonso</figcaption>
+                        </figure>
+                    
+                        <p>Les derniers bruits de paddock laissent entendre que Fernando Alonso aspire à rejoindre Red Bull. Son envie de s'aligner avec l'équipe autrichienne ajoute une dose d'excitation à la saison à venir de Formule 1.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+                <div class="leclerc">
+                    <article>
+                        <div class="article-h">
+                          <h3>Leclerc impressionné par le rythme de Ferrari : "Un signe très encourageant"</h3>
+                          <p class="date">Publié le 26 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <img src="images/f1-charles-leclerc-ferrari-f1austria-f1spa-f1hungaroring-f1france-f1barcelona-f1italy-f1imola-f1silverstone-f1zandvoort.webp" alt="Leclerc">
+                          <figcaption>Charles Leclerc</figcaption>
+                        </figure>
+                    
+                        <p>Charles Leclerc est plus confiant que jamais alors qu'il s'apprête à entamer une nouvelle saison avec Ferrari. Encouragé par le rythme prometteur affiché par l'équipe lors des essais hivernaux, le jeune prodige monégasque se prépare à relever les défis qui l'attendent sur la piste. Avec une détermination renouvelée, Leclerc est prêt à repousser les limites et à défendre les couleurs de la Scuderia avec fougue et passion.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="article-homepage">
+                <div class="russell">
+                    <article>
+                        <div class="article-h">
+                          <h3>Russell voulait le drapeau rouge après son crash à Melbourne</h3>
+                          <p class="date">Publié le 19 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <img src="images/russell.jpeg" alt="Russell">
+                          <figcaption>George Russell</figcaption>
+                        </figure>
+                    
+                        <p>La panique était clairement audible dans la voix de George Russell lorsqu'il a crié sur la radio de l'équipe pour demander un drapeau rouge. Ce drapeau rouge n'est pas venu, mais chez Mercedes, on comprend très bien pourquoi le contrôle de course a fait cela.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+                <div class="vettel">
+                    <article>
+                        <div class="article-h">
+                          <h3>Vettel a pris l'initiative du retour : "Porsche m'a donné une chance"</h3>
+                          <p class="date">Publié le 7 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <img src="images/vettel.avif" alt="Vettel">
+                          <figcaption>Sebastian Vettel</figcaption>
+                        </figure>
+                    
+                        <p>Sebastian Vettel a fait son retour au volant d'une voiture de course. Le quadruple champion du monde de Formule 1 a testé avec succès la Porsche 963 sur le circuit Motorland Aragon. L'Allemand a effectué 118 tours, sur 581 kilomètres, en deux doubles relais. C'était la première fois que Vettel conduisait une hypercar, avec laquelle Porsche participe au championnat du monde d'endurance (WEC) et aux 24 heures du Mans.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+                <div class="verstappen">
+                    <article>
+                        <div class="article-h">
+                          <h3>Windsor sur le DNF de Verstappen : "Je ne dirais pas qu'il aurait gagné cette course"</h3>
+                          <p class="date">Publié le 20 mars 2024</p>
+                        </div>
+                    
+                        <figure>
+                          <img src="images/verstappen.jpg" alt="Verstappen">
+                          <figcaption>Max Verstappen</figcaption>
+                        </figure>
+                    
+                        <p>Peter Windsor, analyste de la Formule 1, explique que le DNF de Max Verstappen a joué un rôle important dans la victoire de Carlos Sainz en Australie. Sainz a rattrapé Verstappen et peu de temps après, le Néerlandais a dû abandonner la bataille en raison de problèmes de freinage. Windsor a également estimé que Ferrari était meilleure que Red Bull dans la gestion des pneus pendant la course.</p>
+                    
+                        <div class="article-f">
+                          <p class="author">Auteur: Fblog</p>
+                        </div>
+                      </article>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>La vidéo f1 la plus vu du moment !</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HM1tq03k3JE?si=09-oFy61ZnkrKI69" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="crash-russell"></iframe>
+            <p class="description-crash">Vidéo du crash de George Russell durant le grand Prix d'Australie</p>
+        </section>
+
+        <section>
+          <div id="article-lien">
+              <div class="creation-article">
+                  <h2>Création d'article</h2>
+                  <p>Participez à notre communauté de passionnés de Formule 1 ! Écrivez votre propre article sur ce sport palpitant. Partagez vos analyses, prédictions, moments préférés ou tout ce qui vous inspire à propos de la F1. Rejoignez-nous et partagez votre passion pour la course automobile !</p>
+                  <h3>Créer un nouvel article</h3>
+                  <form class="form-article">
+                      <label for="title">Titre de l'article :</label><br>
+                      <input type="text" id="title" name="title" required><br><br>
+                      <label for="description">Description :</label><br>
+                      <textarea id="description" name="description" rows="4" required></textarea><br><br>
+                      <label for="image">Image :</label><br>
+                      <input type="file" id="image" name="image" required><br><br>
+                      <input type="submit" value="Soumettre">
+                  </form>
+              </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+          <ul class="footer-links">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="classement.html">Classement F1</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="social-icons">
+              <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="images/insta.png" alt="Instagram"></a>
+          </div>
+          <div class="copyright">
+              <p>&copy; 2024 FBlog. Tous droits réservés.</p>
+              <p><a href="#">Conditions générales d'utilisation</a></p>
+          </div>
+      </div>
+    </footer>
+
+
+<script>
+    let subMenu = document.getElementById("subMenu");
+      
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+      
+</script>
+</body>
+</html>
